@@ -7,8 +7,8 @@ st.title("🚨 Cyber Alert Detection AI")
 
 uploaded_file = st.file_uploader("Upload a CSV or TXT file", type=["csv", "txt"])
 
-model_path = "models/cyber_alert_model.pkl"
-vectorizer_path = "models/vectorizer.pkl"
+model_path = "cyber_alert_model.pkl"
+vectorizer_path = "vectorizer.pkl"
 
 if os.path.exists(model_path) and os.path.exists(vectorizer_path):
     with open(model_path, "rb") as f:
